@@ -6,6 +6,8 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 
+    DATABASE_URL: str | None = None
+
     DB_HOST: str
     DB_PORT: int
     DB_NAME: str
